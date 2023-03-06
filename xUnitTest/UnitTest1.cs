@@ -1,3 +1,5 @@
+using Bogus;
+using Bogus.DataSets;
 using System;
 using Xunit;
 
@@ -8,7 +10,15 @@ namespace xUnitTest
         [Fact]
         public void Test1()
         {
-
+            Faker<Models.Address> addressBogus = new Faker<Models.Address>();
+            addressBogus.RuleFor(x => x.Description, y => y.Address.FullAddress());
+            addressBogus.RuleFor(x => x.Number, y => y.Address.CountryCode());
+            var personBogus = new Faker<Models.Person>();
+            personBogus.RuleFor(x => x.Name, y => y.Person.FirstName);
+            personBogus.RuleFor(x => x.Surname, y => y.Person.LastName);
+            personBogus.RuleFor(x => x.Birthday, y => y.Person.DateOfBirth);
+            personBogus.RuleFor(x => x.Address, y => addressBogus.Generate());
+            var hundredPpl = personBogus.Generate(100);
         }
     }
 }
