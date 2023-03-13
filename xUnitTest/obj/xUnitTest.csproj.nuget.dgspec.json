@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\w63938\\Desktop\\xUnitTest\\xUnitTest\\xUnitTest.csproj": {}
+    "C:\\Users\\w63938\\Desktop\\engenering-programing-wsiz\\xUnitTest\\xUnitTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\w63938\\Desktop\\xUnitTest\\xUnitTest\\xUnitTest.csproj": {
+    "C:\\Users\\w63938\\Desktop\\engenering-programing-wsiz\\xUnitTest\\xUnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\w63938\\Desktop\\xUnitTest\\xUnitTest\\xUnitTest.csproj",
+        "projectUniqueName": "C:\\Users\\w63938\\Desktop\\engenering-programing-wsiz\\xUnitTest\\xUnitTest.csproj",
         "projectName": "xUnitTest",
-        "projectPath": "C:\\Users\\w63938\\Desktop\\xUnitTest\\xUnitTest\\xUnitTest.csproj",
+        "projectPath": "C:\\Users\\w63938\\Desktop\\engenering-programing-wsiz\\xUnitTest\\xUnitTest.csproj",
         "packagesPath": "C:\\Users\\w63938\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\w63938\\Desktop\\xUnitTest\\xUnitTest\\obj\\",
+        "outputPath": "C:\\Users\\w63938\\Desktop\\engenering-programing-wsiz\\xUnitTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

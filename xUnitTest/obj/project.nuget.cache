@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kvukZvtyeajWpKlVt/bQUDAJXHaKj7aBARVWkTczL5vlmzhZQvnhX7MRG302/VksQ28XMrum0McDaE6IRj2YQQ==",
+  "dgSpecHash": "0vbrUoWpdZw7goX68MhVt8T4CL21MOaEZAnIn0WoJevhTes7YzEgnAn3mpsUWF3KbSzTZTvImzNQRdGT163BbQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\w63938\\Desktop\\xUnitTest\\xUnitTest\\xUnitTest.csproj",
+  "projectFilePath": "C:\\Users\\w63938\\Desktop\\engenering-programing-wsiz\\xUnitTest\\xUnitTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\w63938\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\w63938\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",

@@ -19,6 +19,9 @@ namespace xUnitTest
             personBogus.RuleFor(x => x.Birthday, y => y.Person.DateOfBirth);
             personBogus.RuleFor(x => x.Address, y => addressBogus.Generate());
             var hundredPpl = personBogus.Generate(100);
+
+
+            
         }
     }
 }
