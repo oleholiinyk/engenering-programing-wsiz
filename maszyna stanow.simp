@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="13.96" multi-file="no" uid="simp0ef0095c2add4dc2ad1ca4b4349e9d3d">
+  <meta>
+    <name>maszyna stanow</name>
+    <authors>Oleh Oliinyk</authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="initial-state" type="Initial State" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="state" type="State" />
+        <value>1</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="initial-state" type="Initial State" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="state" type="State" />
+        <value>4</value>
+      </counter>
+      <counter>
+        <item-type type-id="general-transition" type="Transition" />
+        <value>23</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlStateMachineDiagram</type>
+        <value>2</value>
+      </counter>
+    </diagrams>
+    <fields />
+  </counters>
+  <alias-groups />
+  <management uid="md-b1ccd46d8e834c418e375253ecf5b8e5" name="" task-id-sequence="0">
+    <persons>
+      <person id="">
+        <first-name>Oleh</first-name>
+        <last-name>Oliinyk</last-name>
+        <role />
+        <e-mail>w63938@student.wsiz.edu.pl</e-mail>
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-981b21551b324ae59acbf998a26f49f5" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <parameters />
+      <types />
+    </custom-types>
+  </types>
+  <items />
+  <models>
+    <model id="p9c518d01de1d47cf8a7867960ae7442a_822194526" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author>Oleh Oliinyk</author>
+        </authors>
+        <description />
+        <creation-date>04/03/2023 15:22:29</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-statechart" id="p65291f03649c400ea39fe9301eb6f6dd_547443541" name="StateMachineDiagram1" order-index="1" uid="" auto-routed-paths="false" default-line-style="default" view-location="0,-100">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author>Oleh Oliinyk</author>
+          </authors>
+          <description />
+          <creation-date>04/03/2023 15:22:29</creation-date>
+          <change-date>04/03/2023 15:39:04</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="di0dc2d02cd4614339a71cd5f724c5eb378206" cid="ST002" type="state" name="Grzeje" creator="" creation-date="04/03/2023 15:23:22" visibility="undefined">
+            <state composite="false" orthogonal="false" simple="false" submachine-state="false">
+              <state-invariant />
+              <actions />
+            </state>
+          </item>
+          <item id="597098e7b63c4502b39ad09a5ca18b78" cid="ELEM018" type="general-transition" creator="" creation-date="04/03/2023 15:33:48" from="di0dc2d02cd4614339a71cd5f724c5eb378206" to="di0dc2d02cd4614339a71cd5f724c5eb378206" visibility="package">
+            <transition guard="" behaviourExpression="">
+              <trigger>readTemp</trigger>
+            </transition>
+          </item>
+          <item id="cc1ee7326aa2409cb90f880e0a0aa60b" cid="ELEM016" type="general-transition" creator="" creation-date="04/03/2023 15:31:49" from="dif226afa2fd6246e7b1e6496f102d69c56470" to="23355cacd91047a6aadc3316b7766c8b" visibility="package">
+            <transition guard="" behaviourExpression="">
+              <trigger>setTempLow &lt; currentTemp &lt; setTempHigh</trigger>
+            </transition>
+          </item>
+          <item id="23355cacd91047a6aadc3316b7766c8b" cid="ST001" type="state" name="Bezczynny" creator="" creation-date="04/03/2023 15:23:22">
+            <state composite="false" orthogonal="false" simple="false" submachine-state="false">
+              <state-invariant />
+              <actions />
+            </state>
+          </item>
+          <item id="31f7afc290f84d369184e3b82aec1546" cid="ELEM017" type="general-transition" creator="" creation-date="04/03/2023 15:33:30" from="dif226afa2fd6246e7b1e6496f102d69c56470" to="dif226afa2fd6246e7b1e6496f102d69c56470" visibility="package">
+            <transition guard="" behaviourExpression="">
+              <trigger>readTemp</trigger>
+            </transition>
+          </item>
+          <item id="492e618bfc994672b48b5d4a46e8ad90" cid="ELEM004" type="general-transition" creator="" creation-date="04/03/2023 15:27:16" from="23355cacd91047a6aadc3316b7766c8b" to="dif226afa2fd6246e7b1e6496f102d69c56470" visibility="package">
+            <transition guard="" behaviourExpression="">
+              <trigger>currentTemp &gt; setTemHigh</trigger>
+            </transition>
+          </item>
+          <item id="dif226afa2fd6246e7b1e6496f102d69c56470" cid="ST003" type="state" name="Chlodzi" creator="" creation-date="04/03/2023 15:23:22" visibility="undefined">
+            <state composite="false" orthogonal="false" simple="false" submachine-state="false">
+              <state-invariant />
+              <actions />
+            </state>
+          </item>
+          <item id="77ccf84af65d4f198e32b0819fed0d54" cid="IS001" type="initial-state" name="Stan poczatkowy" creator="" creation-date="04/03/2023 15:22:51" visibility="undefined" />
+          <item id="f02e4b1a14b547b69ac3184ab71419a4" cid="ELEM010" type="general-transition" creator="" creation-date="04/03/2023 15:28:41" from="23355cacd91047a6aadc3316b7766c8b" to="di0dc2d02cd4614339a71cd5f724c5eb378206" visibility="package">
+            <transition guard="" behaviourExpression="">
+              <trigger>currentTemp &lt; setTemLow</trigger>
+            </transition>
+          </item>
+          <item id="1f9dc48ba8e04e409c26e8cb9b8f3344" cid="ELEM020" type="general-transition" creator="" creation-date="04/03/2023 15:36:48" from="dif226afa2fd6246e7b1e6496f102d69c56470" to="di0dc2d02cd4614339a71cd5f724c5eb378206" visibility="package">
+            <transition guard="" behaviourExpression="">
+              <trigger>currentTemp &gt; setTempHigh</trigger>
+            </transition>
+          </item>
+          <item id="ef34497d9645411cbe32ff69669577f0" cid="ELEM022" type="general-transition" creator="" creation-date="04/03/2023 15:39:04" from="23355cacd91047a6aadc3316b7766c8b" to="23355cacd91047a6aadc3316b7766c8b" visibility="package">
+            <transition guard="" behaviourExpression="" />
+          </item>
+          <item id="dbbeb09be9b642188d3b5382f6d0f13d" cid="ELEM015" type="general-transition" creator="" creation-date="04/03/2023 15:30:37" from="di0dc2d02cd4614339a71cd5f724c5eb378206" to="23355cacd91047a6aadc3316b7766c8b" visibility="package">
+            <transition guard="" behaviourExpression="">
+              <trigger>setTempLow &lt; currentTemp &lt; setTempHigh</trigger>
+            </transition>
+          </item>
+          <item id="5d3820af35024756bcb6528d6bab910e" cid="ELEM001" type="general-transition" creator="" creation-date="04/03/2023 15:24:50" from="77ccf84af65d4f198e32b0819fed0d54" to="23355cacd91047a6aadc3316b7766c8b" visibility="package">
+            <transition guard="" behaviourExpression="" />
+          </item>
+        </abstract-items>
+        <layer id="5b60a6e8ebef4bedae2ae0bbb234e05f" name="Default" visible="true" enabled="true" locked="false">
+          <item id="77ccf84af65d4f198e32b0819fed0d54" iid="872d1ba5823f42f3b75d318727cb1246" creation-date="04/03/2023 15:22:51" order-index="0" type="entity">
+            <layout name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" ax="127" ay="50" awidth="40" aheight="40" x="127" y="50" width="55" height="40" rotation-center="-7.5,-7.5" />
+          </item>
+          <item id="23355cacd91047a6aadc3316b7766c8b" iid="01fd62d3fde942cbb61b3a127b2dc9a0" creation-date="04/03/2023 15:23:22" order-index="1" type="entity">
+            <layout ax="257" ay="218" awidth="100" aheight="50" x="257" y="218" width="100" height="50" expanded="257,218,100,50" collapsed="0,0,0,0" />
+          </item>
+          <item id="di0dc2d02cd4614339a71cd5f724c5eb378206" iid="91bab25fcaa64825a3d322854a97d2ce" creation-date="04/03/2023 15:23:22" order-index="1" type="entity">
+            <layout ax="687" ay="90" awidth="100" aheight="50" x="687" y="90" width="100" height="50" expanded="687,90,100,50" collapsed="0,0,0,0" />
+          </item>
+          <item id="dif226afa2fd6246e7b1e6496f102d69c56470" iid="ba655a551b9f4018bfd675405c61c98c" creation-date="04/03/2023 15:23:22" order-index="1" type="entity">
+            <layout ax="687" ay="509" awidth="100" aheight="50" x="687" y="509" width="100" height="50" expanded="687,509,100,50" collapsed="0,0,0,0" />
+          </item>
+          <item id="5d3820af35024756bcb6528d6bab910e" iid="214a109d90434607b6929206c72dea1e" creation-date="04/03/2023 15:24:50" order-index="2" type="relation">
+            <layout line-style="oblique" lock-end-point="true" lock-to-fields="false" auto-path="" x1="159" y1="86" x2="257" y2="218" start-border-pos="0.532094573974609" end-border-pos="0" end-local-pos="0" name-position="0,20">
+              <points>
+                <point x="159" y="86" />
+                <point x="257" y="218" />
+              </points>
+            </layout>
+            <relation from="77ccf84af65d4f198e32b0819fed0d54" from-iid="872d1ba5823f42f3b75d318727cb1246" to="23355cacd91047a6aadc3316b7766c8b" to-iid="01fd62d3fde942cbb61b3a127b2dc9a0" />
+          </item>
+          <item id="492e618bfc994672b48b5d4a46e8ad90" iid="84afbc8d44e9478ebbf637d4e692707a" creation-date="04/03/2023 15:27:16" order-index="3" type="relation">
+            <layout line-style="oblique" lock-end-point="true" lock-to-fields="false" auto-path="" x1="307" y1="268" x2="687" y2="559" start-border-pos="0.62460319519043" end-border-pos="0.75" end-local-pos="50" name-position="0,20">
+              <points>
+                <point x="307" y="268" />
+                <point x="309" y="558" />
+                <point x="687" y="559" />
+              </points>
+            </layout>
+            <relation from="23355cacd91047a6aadc3316b7766c8b" from-iid="01fd62d3fde942cbb61b3a127b2dc9a0" to="dif226afa2fd6246e7b1e6496f102d69c56470" to-iid="ba655a551b9f4018bfd675405c61c98c" />
+          </item>
+          <item id="f02e4b1a14b547b69ac3184ab71419a4" iid="3569e1b5141544719293239bcaf6b133" creation-date="04/03/2023 15:28:41" order-index="4" type="relation">
+            <layout line-style="oblique" start-auto-side="false" lock-start-point="true" lock-to-fields="false" auto-path="" x1="307" y1="218" x2="687" y2="115" start-border-pos="0.125" end-border-pos="0.875" start-local-pos="50" name-position="0,20">
+              <points>
+                <point x="307" y="218" />
+                <point x="306" y="115" />
+                <point x="687" y="115" />
+              </points>
+            </layout>
+            <relation from="23355cacd91047a6aadc3316b7766c8b" from-iid="01fd62d3fde942cbb61b3a127b2dc9a0" to="di0dc2d02cd4614339a71cd5f724c5eb378206" to-iid="91bab25fcaa64825a3d322854a97d2ce" />
+          </item>
+          <item id="dbbeb09be9b642188d3b5382f6d0f13d" iid="ec8cb499fd494eafa28ae390845e2a3c" creation-date="04/03/2023 15:30:37" order-index="6" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="737" y1="140" x2="357" y2="243" start-border-pos="0.625" end-border-pos="0.375" start-local-pos="50" end-local-pos="25" name-position="-1,20">
+              <points>
+                <point x="737" y="140" />
+                <point x="738" y="243" />
+                <point x="422" y="243" />
+                <point x="357" y="243" />
+              </points>
+            </layout>
+            <relation from="di0dc2d02cd4614339a71cd5f724c5eb378206" from-iid="91bab25fcaa64825a3d322854a97d2ce" to="23355cacd91047a6aadc3316b7766c8b" to-iid="01fd62d3fde942cbb61b3a127b2dc9a0" />
+          </item>
+          <item id="cc1ee7326aa2409cb90f880e0a0aa60b" iid="93399c3baee044dea011388899b507ac" creation-date="04/03/2023 15:31:49" order-index="7" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="687" y1="509" x2="339" y2="268" start-border-pos="0" end-border-pos="0.545000001788139" start-local-pos="0" end-local-pos="82" name-position="129,-27">
+              <points>
+                <point x="687" y="509" />
+                <point x="340" y="509" />
+                <point x="339" y="268" />
+              </points>
+            </layout>
+            <relation from="dif226afa2fd6246e7b1e6496f102d69c56470" from-iid="ba655a551b9f4018bfd675405c61c98c" to="23355cacd91047a6aadc3316b7766c8b" to-iid="01fd62d3fde942cbb61b3a127b2dc9a0" />
+          </item>
+          <item id="31f7afc290f84d369184e3b82aec1546" iid="028800625ec8403dadd4d0d57fe6283a" creation-date="04/03/2023 15:33:30" order-index="8" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="737" y1="509" x2="787" y2="533" start-border-pos="0.125" end-border-pos="0.37" start-local-pos="50" end-local-pos="24" name-position="48,31">
+              <points>
+                <point x="737" y="509" />
+                <point x="787" y="482" />
+                <point x="837" y="459" />
+                <point x="837" y="533" />
+                <point x="787" y="533" />
+              </points>
+            </layout>
+            <relation from="dif226afa2fd6246e7b1e6496f102d69c56470" from-iid="ba655a551b9f4018bfd675405c61c98c" to="dif226afa2fd6246e7b1e6496f102d69c56470" to-iid="ba655a551b9f4018bfd675405c61c98c" />
+          </item>
+          <item id="597098e7b63c4502b39ad09a5ca18b78" iid="dae0ea7847e4433ca4e8e01fbac8a5f8" creation-date="04/03/2023 15:33:48" order-index="9" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="737" y1="90" x2="787" y2="115" start-border-pos="0.125" end-border-pos="0.375" start-local-pos="50" end-local-pos="25" name-position="48,30">
+              <points>
+                <point x="737" y="90" />
+                <point x="775" y="70" />
+                <point x="837" y="40" />
+                <point x="837" y="115" />
+                <point x="787" y="115" />
+              </points>
+            </layout>
+            <relation from="di0dc2d02cd4614339a71cd5f724c5eb378206" from-iid="91bab25fcaa64825a3d322854a97d2ce" to="di0dc2d02cd4614339a71cd5f724c5eb378206" to-iid="91bab25fcaa64825a3d322854a97d2ce" />
+          </item>
+          <item id="1f9dc48ba8e04e409c26e8cb9b8f3344" iid="fc2104086aad43c39936c202236709e1" creation-date="04/03/2023 15:36:48" order-index="10" type="relation">
+            <layout line-style="oblique" start-auto-side="false" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="737" y1="509" x2="775" y2="140" start-border-pos="0.125" end-border-pos="0.53" start-local-pos="50" end-local-pos="88" name-position="113,-19">
+              <points>
+                <point x="737" y="509" />
+                <point x="737" y="396" />
+                <point x="778" y="396" />
+                <point x="775" y="140" />
+              </points>
+            </layout>
+            <relation from="dif226afa2fd6246e7b1e6496f102d69c56470" from-iid="ba655a551b9f4018bfd675405c61c98c" to="di0dc2d02cd4614339a71cd5f724c5eb378206" to-iid="91bab25fcaa64825a3d322854a97d2ce" />
+          </item>
+          <item id="ef34497d9645411cbe32ff69669577f0" iid="da988cc1f7d642c991f61881da9eaa27" creation-date="04/03/2023 15:39:04" order-index="11" type="relation">
+            <layout line-style="oblique" start-auto-side="false" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="257" y1="243" x2="282" y2="268" start-border-pos="0.875" end-border-pos="0.6875" start-local-pos="25" end-local-pos="25" name-position="0,20">
+              <points>
+                <point x="257" y="243" />
+                <point x="203" y="244" />
+                <point x="204" y="301" />
+                <point x="282" y="301" />
+                <point x="282" y="268" />
+              </points>
+            </layout>
+            <relation from="23355cacd91047a6aadc3316b7766c8b" from-iid="01fd62d3fde942cbb61b3a127b2dc9a0" to="23355cacd91047a6aadc3316b7766c8b" to-iid="01fd62d3fde942cbb61b3a127b2dc9a0" />
+          </item>
+        </layer>
+      </diagram>
+      <diagram type="uml-statechart" id="p00266f52823c4f3db2e255fec9829545_654957179" name="StateMachineDiagram2" order-index="2" overview-order-index="0" uid="" auto-routed-paths="false" default-line-style="default">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author>Oleh Oliinyk</author>
+          </authors>
+          <description />
+          <creation-date>04/03/2023 15:41:05</creation-date>
+          <change-date>04/03/2023 15:41:05</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items />
+        <layer id="67aec98f1f154daf85dc1649aabde316" name="Default" visible="true" enabled="true" locked="false" />
+      </diagram>
+    </model>
+  </models>
+</sim-project>
